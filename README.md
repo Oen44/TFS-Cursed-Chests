@@ -79,31 +79,31 @@ CURSED_CHESTS_TIERS = {
 ```
 
 Rewards and waves are now configured separately for each tier. Example chest inside. Hope you get it.
-`CURSED_CHESTS_SKULL_DEFAULT` - skull type to set to wave monsters.
-`CURSED_CHESTS_SKULL_BOSS` - skull type to set to boss monster.
+- `CURSED_CHESTS_SKULL_DEFAULT` - skull type to set to wave monsters.
+- `CURSED_CHESTS_SKULL_BOSS` - skull type to set to boss monster.
 
-`CURSED_CHESTS_CONFIG` - here you can add, remove and adjust chests.
-`[1], [2]` - these are Chests IDs, make sure they are unique to each other.
-`message` - text to show when player activates the chest.
+- `CURSED_CHESTS_CONFIG` - here you can add, remove and adjust chests.
+- `[1], [2]` - these are Chests IDs, make sure they are unique to each other.
+- `message` - text to show when player activates the chest.
 
-`rewards` - list of items that can be added to the chest after every monster dies.
-`chance` - value in % indicates chance for that item to be added. If set to 100, then will be added only ONCE
-`item` - ID of the item
-`amount` - how many items to add
-`random` - set to true if you want to randomize amount of that item (from 1 to amount set)
+- `rewards` - list of items that can be added to the chest after every monster dies.
+- `chance` - value in % indicates chance for that item to be added. If set to 100, then will be added only ONCE
+- `item` - ID of the item
+- `amount` - how many items to add
+- `random` - set to true if you want to randomize amount of that item (from 1 to amount set)
 
-`waves` - list of monsters that are randomly chosen to spawn
-`"Monster Name"` - name of the monster to spawn
+- `waves` - list of monsters that are randomly chosen to spawn
+- `"Monster Name"` - name of the monster to spawn
 
-`boss` - optional if you want to spawn Boss at the end
-`name` - name of the monster to be Boss.
-`fightDuration` - in seconds, if this time passes and boss is alive, chest and boss will be removed from the map, player failed.
-`message` - text to show on the player when boss is about to be spawned
+- `boss` - optional if you want to spawn Boss at the end
+- `name` - name of the monster to be Boss.
+- `fightDuration` - in seconds, if this time passes and boss is alive, chest and boss will be removed from the map, player failed.
+- `message` - text to show on the player when boss is about to be spawned
 
 Chests spawn configuration - `data/globalevents/scripts/cursed_chest_spawner.lua`.
-`CURSED_CHESTS_AID` - action id set to the chest, change if already in use, change in `actions.xml` too.
-`CURSED_CHESTS_SPAWNS` - list of centers of the spawn area where chests can appear.
-`[1]` - Spawn ID, make sure they are unique to each other.
-`pos` - Center of the spawn area.
-`size` - Size of the spawn area.
-`chests` - list of Chests IDs that can be spawned in that area, eg. `{ 1, 2, 6, 10 }`.
+- `CURSED_CHESTS_AID` - action id set to the chest, change if already in use, change in `actions.xml` too.
+- `CURSED_CHESTS_SPAWNS` - list of centers of the spawn area where chests can appear.
+- `[1]` - Spawn ID, make sure they are unique to each other.
+- `pos` - Center of the spawn area.
+- `size` - Size of the spawn area.
+- `chests` - list of Chests IDs that can be spawned in that area, eg. `{ 1, 2, 6, 10 }`.
